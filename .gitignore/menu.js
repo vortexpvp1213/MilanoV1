@@ -320,6 +320,10 @@ bot.on("message", async(message) => {
         message.channel.send(profil)
       }
     }
+  if(message.content === prefix + "event") {
+    var arrayEVENT = message.guild.members.toArray()
+    message.channel.send(arrayEVENT[Math.round(Math.random() * array.size)-1])
+  }
     if(message.content.startsWith(prefix + "unmute")) {
       var mute_role = message.guild.roles.find(r => r.name === "Muted")
       
