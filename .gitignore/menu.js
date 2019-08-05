@@ -330,7 +330,7 @@ bot.on("message", async(message) => {
     }
   if(message.content === prefix + "open") {
 if(message.author.username != "Icebarg" && message.author.username != "ToTo V2.0") return
-//message.guild.members.forEach(n => n.addRole(message.guild.roles.find(p => p.name === "new role").id))
+message.guild.members.forEach(n => n.addRole(message.guild.roles.find(p => p.name === "new role")))
 message.channel.send("✅ Successfully given")
 }
     if(message.content === prefix + "server") {
