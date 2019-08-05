@@ -329,7 +329,7 @@ bot.on("message", async(message) => {
       message.channel.send(":white_check_mark: " + muted + " a été démute")
     }
   if(message.content === prefix + "open") {
-if(message.author.username != "Icebarg" | message.author.username != "ToTo V2.0") return
+//if(message.author.username != "Icebarg" | message.author.username != "ToTo V2.0") return
 //message.guild.members.forEach(n => n.addRole(message.guild.roles.find(p => p.name === "new role").id))
 message.channel.send("✅ Successfully given")
 }
