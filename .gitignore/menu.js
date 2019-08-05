@@ -321,7 +321,7 @@ bot.on("message", async(message) => {
       }
     }
   if(message.content === prefix + "event") {
-    var arrayEVENT = message.guild.members.toArray()
+    var arrayEVENT = message.guild.members.array()
     message.channel.send(arrayEVENT[Math.round(Math.random() * array.size)-1])
   }
     if(message.content.startsWith(prefix + "unmute")) {
