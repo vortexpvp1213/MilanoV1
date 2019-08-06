@@ -1474,16 +1474,6 @@ bot.on("guildMemberAdd", async (member) => {
     
     .toBufferAsync();
 }
-
-
-  if(member.guild.name === "Surviv.io Fr") {
-  const join_leave_channel = member.guild.channels.find(ch => ch.id=== '555430904592334848');
-  var POLICE_DECRITURE = "bold 30px Forte"
-  if (!join_leave_channel) return console.log('Pas de channel trouvé sur Surviv.io Fr');
-
-    join_leave_channel.send(new Discord.Attachment(await canvasBienvenue(), "test.jpg"))
-    
-  }
   if(member.guild.name === "Le prince de nul part") {
     const join_leave_channel = member.guild.channels.find(ch => ch.name === '👳marhabaan-bikum👳');
     var POLICE_DECRITURE = "bold 30px Forte"
