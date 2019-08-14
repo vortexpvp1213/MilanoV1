@@ -591,7 +591,7 @@ message.channel.send("✅ Successfully reloved")
     }
 
     if(message.content.startsWith(prefix + "priperm")) {
-      const member = message.guild.member(message.mentions.users.first())
+      const member = message.guild.members(message.mentions.users.first())
       if(member) {
         message.delete()
         var permisssions = message.member.permissions
