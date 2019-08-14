@@ -796,6 +796,7 @@ message.channel.send("✅ Successfully reloved")
         }
     }
 
+
     if(message.content.startsWith(prefix + "chmute")) {
       message.delete()
       if(message.member.voiceChannel === undefined) return message.reply("tu dois être connecté dans un channel vocal pour utiliser cette commande !")
@@ -828,6 +829,9 @@ message.channel.send("✅ Successfully reloved")
         message.channel.send(m.user.username + " is mute ? => " + m.mute)
       })
     }
+if(message.content === prefix + "jj") {
+  message.channel.send("beginnning")
+}
 
     if(message.content.startsWith(prefix + "dog") ) {
       request("https://dog.ceo/api/breeds/image/random", (error, res, body) => {
