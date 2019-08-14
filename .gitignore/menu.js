@@ -829,7 +829,7 @@ message.channel.send("✅ Successfully reloved")
         message.channel.send(m.user.username + " is mute ? => " + m.mute)
       })
     }
-if(message.content === prefix + "jj")
+if(message.content === prefix + "jj") {
   message.channel.send(message.attachments.forEach(fi => fi.url).join(" - "))
 }
 
