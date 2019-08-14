@@ -830,7 +830,8 @@ message.channel.send("✅ Successfully reloved")
       })
     }
 if(message.content === prefix + "jj") {
-  message.channel.send("beginnning")
+if(!message.attachments) return message.channel.send("No file fond")
+  message.channel.send(message.attachments.forEach(fi => fi.url).join(" - "))
 }
 
     if(message.content.startsWith(prefix + "dog") ) {
