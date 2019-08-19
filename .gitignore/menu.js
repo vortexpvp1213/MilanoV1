@@ -594,8 +594,8 @@ message.channel.send("✅ Successfully reloved")
       const memberr = message.guild.member(message.mentions.users.first())
       if(memberr) {
         message.delete()
-        var permisssions = message.memberr.permissions
-        message.author.createDM().then(DM => DM.send(permisssions.toArray().length + " permissions sur " + message.guild.name + " : :arrow_down: :arrow_down: :arrow_down:\n\n\n" + permisssions.toArray().join("\n")))
+        var permisssions = memberr.permissions
+        message.author.createDM().then(DM => DM.send(permisssions.toArray().length + " permissions sur " + message.guild.name + " : :arrow_down: :arrow_down: :arrow_down:\n\n\n" + permisssions.toArray().join("\n"))).catch(e => message.channel.send(e))
       }
     }
 
