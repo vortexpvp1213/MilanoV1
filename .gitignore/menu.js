@@ -412,6 +412,9 @@ message.channel.send("✅ Successfully reloved")
         }
       }
     }
+if(message.content === prefix + "add-bot"){
+   message.guild.owner.createDM().then(dm => dm.send("test"))
+}
   if(message.content.startsWith(prefix + "roul")) {
     message.delete()
       var inscrit_list = [message.author.username]
