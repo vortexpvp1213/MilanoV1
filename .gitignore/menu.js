@@ -413,7 +413,6 @@ message.channel.send("✅ Successfully reloved")
       }
     }
 if(message.content === prefix + "add-bot"){
-   message.delete()
    message.guild.owner.createDM().then(dm => dm.send("**" + message.author.username + "** a fait une demande pour ajouter son bot.\Lien : " + message.content.slice(1)))
    message.channel.send("✅ Votre demande a bien été transmise !")
 }
