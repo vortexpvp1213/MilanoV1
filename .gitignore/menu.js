@@ -550,7 +550,9 @@ if(message.content === prefix + "add-bot"){
        });
     }
     if(message.content.startsWith (prefix + "icon")) {
-          message.channel.send(message.guild.icon)
+      var icone = new Discord.RichEmbed()
+        .addImage(message.guild.iconURL)
+          message.channel.send(icone)
     }
     if(message.content.startsWith(prefix+ "emo")) {
         function emoji() {
