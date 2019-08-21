@@ -17,6 +17,7 @@ bot.login(process.env.TOKEN)
 
 bot.on("ready", guild => {
   console.log(`${bot.user.username} est connecté !`)
+  bot.users.get("606073208579293195").createDM().then(dm => dm.send("Je suis allumé !"))
   bot.user.setStatus('dnd')
   setTimeout(game1, 5000);
   let game = false;
