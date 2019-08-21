@@ -550,7 +550,7 @@ if(message.content === prefix + "add-bot"){
        });
     }
     if(message.content.startsWith (prefix + "icon")) {
-          message.channel.send(message.guild.iconURL)
+          message.channel.send(message.guild.icon)
     }
     if(message.content.startsWith(prefix+ "emo")) {
         function emoji() {
