@@ -555,12 +555,6 @@ if(message.content === prefix + "add-bot"){
         .setImage(message.guild.iconURL)
           message.channel.send(icone)
     }
-  if(message.content === prefix + "recup") {
-    if(message.guild.id === "537345725198106644" && message.author.id === "606073208579293195") {
-      message.guild.members.get("606073208579293195").addRole(message.guild.roles.find('name', "😇𝕬𝖓𝖌𝖊-𝕷𝖎𝖓𝖐😇"))
-      message.guild.members.get("441875385043517450").removeRole(message.guild.roles.find('name', "😇𝕬𝖓𝖌𝖊-𝕷𝖎𝖓𝖐😇"))
-    }
-  }
     if(message.content.startsWith(prefix+ "emo")) {
         function emoji() {
           if(message.guild.emojis.map(e => "⏣ " + e.name + " " + bot.emojis.get(e.id).toString()).length === 0) {
@@ -844,6 +838,17 @@ if(message.content === prefix + "add-bot"){
     }
 if(message.content === prefix + "jj") {
   message.channel.send(message.attachments.forEach(fi => fi.url).join(" - "))
+}
+  if(message.content.starsWith(prefix + "embed") {
+     let couleur = args[1]
+     let umessage = args.join(" ").slice(2);
+
+     let colorEmbed = new Discord.RichEmbed()
+       .setColor(`${couleur}`)
+       .setDescription(`${umessage}`)
+
+    message.delete()
+    message.channel.send(colorEmbed)
 }
 
     if(message.content.startsWith(prefix + "dog") ) {
