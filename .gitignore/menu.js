@@ -602,7 +602,7 @@ if(heure === 12)
 if(minutes === 00)
 if(sec = 1)
 client.channels.get("613499067737309204").send("Ceci est un message programmé")
-}, 68000)
+}, 10)
   if(message.content.startsWith(prefix + "reve")) {
     if(!args[1]) return message.channel.send("Veullez entrer un texte à inverser ! :upside_down:")
       var arg = message.content.split("")
