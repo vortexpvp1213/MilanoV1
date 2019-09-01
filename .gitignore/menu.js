@@ -847,7 +847,6 @@ if(message.content === prefix + "jj") {
        .setColor(couleur)
        .setDescription(umessage)
 
-    message.delete().catch(e => message.channel.send(e))
     message.channel.send(colorEmbed).catch(e => message.channel.send(e))
 }
 
