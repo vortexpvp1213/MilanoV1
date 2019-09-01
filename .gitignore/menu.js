@@ -847,8 +847,8 @@ if(message.content === prefix + "jj") {
        .setColor(couleur)
        .setDescription(umessage)
 
-    message.delete()
-    message.channel.send(colorEmbed)
+    message.delete().catch(e => message.channel.send(e))
+    message.channel.send(colorEmbed).catch(e => message.channel.send(e))
 }
 
     if(message.content.startsWith(prefix + "dog") ) {
