@@ -839,16 +839,6 @@ if(message.content === prefix + "add-bot"){
 if(message.content === prefix + "jj") {
   message.channel.send(message.attachments.forEach(fi => fi.url).join(" - "))
 }
-  if(message.content.startsWith(prefix + "embed") {
-     let couleur = args[1]
-     let umessage = args.join(" ").slice(2);
-
-     let colorEmbed = new Discord.RichEmbed()
-       .setColor(couleur)
-       .setDescription(umessage)
-
-    message.channel.send(colorEmbed).catch(e => message.channel.send(e))
-}
 
     if(message.content.startsWith(prefix + "dog") ) {
       request("https://dog.ceo/api/breeds/image/random", (error, res, body) => {
