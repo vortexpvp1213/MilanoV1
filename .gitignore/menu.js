@@ -844,8 +844,8 @@ if(message.content === prefix + "jj") {
      let umessage = args.join(" ").slice(2);
 
      let colorEmbed = new Discord.RichEmbed()
-       .setColor(`${couleur}`)
-       .setDescription(`${umessage}`)
+       .setColor(couleur)
+       .setDescription(umessage)
 
     message.delete()
     message.channel.send(colorEmbed)
