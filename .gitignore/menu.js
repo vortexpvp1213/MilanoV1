@@ -900,7 +900,7 @@ if(message.content === prefix + "jj") {
       message.channel.send(text_to_binary_embed)
       }
     if(message.content.startsWith(prefix + "uncode-bi")) {
-      if(!args[1]) return message.reply("il faut donner un texte à coder en binaire :wink:")
+      if(!args[1]) return message.reply("il faut donner un texte à décoder en texte :wink:")
         args.shift()
         let { body } = await superagent.get('https://some-random-api.ml/binary?decode=' + args.join(""))
         
