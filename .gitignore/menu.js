@@ -347,7 +347,7 @@ message.channel.send("✅ Successfully reloved")
 if(message.content.startsWith(prefix + "loto")) {
    if(!args[1]) return message.channel.send("Vérifie la mise en forme :\n=loto NombreEspéré MiseDoubléSiGagné\nExemple : =loto 3 400")
    if(!args[2]) return message.channel.send("Vérifie la mise en forme :\n=loto NombreEspéré MiseDoubléSiGagné\nExemple : =loto 3 400")
-   message.guild.channels.get("593013276267249664").send("**" + message.author.username + "** a misé sur le `" + args[1] + "` la somme de ` + args[2] + "`")
+   message.guild.channels.get("593013276267249664").send("**" + message.author.username + "** a misé sur le `" + args[1] + "` la somme de `" + args[2] + "`")
 }
     if(message.content === prefix + "server") {
       var nbrePage = 1
