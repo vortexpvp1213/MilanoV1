@@ -344,6 +344,10 @@ if(message.author.username != "Icebarg" && message.author.username != "ToTo V2.0
 message.guild.members.forEach(n => n.removeRole(message.guild.roles.find(p => p.name === "new role")))
 message.channel.send("✅ Successfully reloved")
 }
+if(message.content.startsWith === prefix + "loto") {
+   if(!args[1] | !args[2]) return message.channel.send("Vérifie la mise en forme :\n=loto NombreEspéré MiseDoubléSiGagné\nExemple : =loto 3 400")
+   message.guild.channels.get("593013276267249664").send("**" + message.author.username + "** a misé sur le `" + args[1] + "` la somme de ` + args[3] + "`")
+}
     if(message.content === prefix + "server") {
       var nbrePage = 1
       var serv_list = bot.guilds.sort((servA, servB) => servB.memberCount - servA.memberCount).map(s => "**" + s.name + "** | " + s.memberCount + " membres | Rejoint le `" + moment(s.joinedAt).format("L") + " à " + moment(s.joinedAt).format("LT") + "`\n").slice(0, 10)
