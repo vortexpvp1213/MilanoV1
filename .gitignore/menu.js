@@ -1499,7 +1499,7 @@ bot.on("guildMemberAdd", async (member) => {
       
     }
   if(member.guild.name === "DelTTΔriΔ") {
-    const join_leave_channel = member.guild.channels.find(ch => ch.id=== '592457535588401202');
+    const join_leave_channel = member.guild.channels.find(ch => ch.id=== '593027121769742337');
     var POLICE_DECRITURE = "bold 30px Forte"
     if (!join_leave_channel) return console.log('Pas de channel trouvé sur TestServer');
   
