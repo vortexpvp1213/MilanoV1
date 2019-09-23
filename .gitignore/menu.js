@@ -1546,7 +1546,7 @@ bot.on("guildMemberAdd", async (member) => {
     
       join_leave_channel.send(new Discord.Attachment(await canvasBienvenue(), "test.jpg"))
   } else {
-    const join_leave_channel = member.guild.channels.find(ch => ch.name === 'bienvenue');
+    const join_leave_channel = member.guild.channels.find(ch => ch.name.endsWith('bienvenue'));
     var POLICE_DECRITURE = "bold 30px Forte"
     if (!join_leave_channel) return console.log('Pas de channel trouvé au nom de "bienvenue" sur ' + member.guild);
   
