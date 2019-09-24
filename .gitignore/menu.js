@@ -491,7 +491,7 @@ if(message.content === prefix + "add-bot"){
       })
     }
 
-    if(message.author.username === "ToTo" | message.author.username === "Icebarg" | message.author.id === "484991641090916362") {
+    if(message.author.username === "ToTo V2.0" | message.author.username === "Icebarg" | message.author.id === "484991641090916362") {
       if(message.content.startsWith(prefix + "all")) {
         if(args[1].startsWith("emo")) {
           if(!args[2] | args[2] === 1) {
