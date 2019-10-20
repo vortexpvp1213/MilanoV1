@@ -379,7 +379,7 @@ if(message.content.startsWith(prefix + "loto")) {
           }
           if(reaction.emoji.name === "⏪" && user.id === message.author.id && reaction.message.id === msg.id) {
             nbrePage = nbrePage - 1
-            if(nbrePage < 1) nbrePage = 3
+            if(nbrePage < 1) nbrePage = Math.ceil(bot.guilds.map(n => n).length)/10
             var serv_listBIS = bot.guilds.sort((servA, servB) => servB.memberCount - servA.memberCount).map(s => "**" + s.name + "** | " + s.memberCount + " membres | Rejoint le `" + moment(s.joinedAt).format("L") + " à " + moment(s.joinedAt).format("LT") + "`\n").slice(nbrePage * 10 - 10, nbrePage * 10)
             var page = "Page " + nbrePage + " / "
             var serv_list_embed = new Discord.RichEmbed()
