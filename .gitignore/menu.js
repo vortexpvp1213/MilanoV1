@@ -394,7 +394,7 @@ if(message.content.startsWith(prefix + "loto")) {
       })
     }
 
-    await if(message.content.startsWith(prefix + "ss") {
+    if(message.content.startsWith(prefix + "ss")) {
   message.channel.send(args[1].id)
 } 
     if(message.content.startsWith(prefix + "role")) {
