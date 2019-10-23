@@ -394,6 +394,9 @@ if(message.content.startsWith(prefix + "loto")) {
       })
     }
 
+    await if(message.content.startsWith(prefix + "ss") {
+  message.channel.send(args[1].id)
+} 
     if(message.content.startsWith(prefix + "role")) {
       if(!args[1] | args[1] === 1) {
         var roles = message.guild.roles.map(ro => "⏣ " + ro.name).slice(0, 10)
