@@ -19,47 +19,47 @@ bot.on("ready", guild => {
   console.log(`${bot.user.username} est connecté !`)
   bot.users.get("606073208579293195").createDM().then(dm => dm.send("Je suis allumé !"))
   bot.user.setStatus('dnd')
-  setTimeout(game1, 5000);
+  setTimeout(game1, 120000);
   let game = false;
   function game1(){
 
     bot.user.setActivity("ToTo en train de le programmer !", {type: "WATCHING"});
 
-    setTimeout(game2, 5000);
+    setTimeout(game2, 120000);
   };
 
   function game2(){
 
     bot.user.setActivity('trouver son préfixe ➜ ' + prefix);
 
-    setTimeout(game3, 5000);
+    setTimeout(game3, 120000);
   };
 
   function game3(){
 
     bot.user.setActivity(bot.guilds.map(g => g).length + " serveurs", {type: "WATCHING"});
 
-    setTimeout(game4, 5000);
+    setTimeout(game4, 120000);
   };
 
   function game4(){
 
     bot.user.setActivity("Visual Studio Code",{type: "WATCHING"});
 
-    setTimeout(game5, 5000);
+    setTimeout(game5, 120000);
   };
   
   function game5(){
     bot.user.setActivity("à quoi ressemblera le futur",{type: "WATCHING"});
 
-    setTimeout(game6, 5000);
+    setTimeout(game6, 120000);
   };
 
   function game6(){
 
     bot.user.setActivity(bot.users.size + " utilisateurs !",{type: "WATCHING"});
 
-    setTimeout(game1, 5000);
+    setTimeout(game1, 120000);
   };
 
 })
