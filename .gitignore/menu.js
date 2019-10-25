@@ -1549,7 +1549,7 @@ bot.on("guildMemberAdd", async (member) => {
     
       join_leave_channel.send(new Discord.Attachment(await canvasBienvenue(), "test.jpg"))
 }
-if(member.guild.id === "636491027665911821") {
+if(member.guild.name === "Team : [nounet]") {
     const join_leave_channel = member.guild.channels.find(ch => ch.id === "636618553646120990")
     var POLICE_DECRITURE = "bold 30px Cambria Math"
     join_leave_channel.send("Arrivée d'un nouveau nounet" + new Discord.Attachment(await canvasBienvenue(), "bvn.jpg"))
