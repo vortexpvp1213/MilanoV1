@@ -1548,6 +1548,11 @@ bot.on("guildMemberAdd", async (member) => {
       if (!join_leave_channel) return console.log('Pas de channel trouvé sur ⭐Ł¡πk ĢลπĢ⭐');
     
       join_leave_channel.send(new Discord.Attachment(await canvasBienvenue(), "test.jpg"))
+}
+if(member.guild.id === "636491027665911821") {
+    const join_leave_channel = member.guild.channels.find(ch => ch.id === "636618553646120990")
+    var POLICE_DECRITURE = "bold 30px Cambria Math"
+    join_leave_channel.send("Arrivée d'un nouveau nounet" + new Discord.Attachment(await canvasBienvenue(), "bvn.jpg"))
   } else {
     const join_leave_channel = member.guild.channels.find(ch => ch.name.endsWith('bienvenue'));
     var POLICE_DECRITURE = "bold 30px Forte"
