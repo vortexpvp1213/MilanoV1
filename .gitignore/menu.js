@@ -563,7 +563,7 @@ if(message.content === prefix + "add-bot"){
         .setImage(message.guild.iconURL)
           message.channel.send(icone)
     }
-if(message.mentions.length > 3){
+if(message.mentions.users.length > 3){
     message.delete()
     message.reply(" évitez de trop mentionner !")
 }
