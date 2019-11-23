@@ -2,9 +2,6 @@
   "name": "milano",
   "version": "2.0.0",
   "main": "menu.js",
-  "engines": {
-    "node": "12.13.0"
-  }
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node menu.js"
